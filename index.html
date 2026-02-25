@@ -14,7 +14,6 @@
         <div id="unity-container" class="unity-desktop">
             <canvas id="unity-canvas"></canvas>
         </div>
-        <div id="unity-fullscreen-button" style="display: none;"></div>
         <div id="loading-cover" style="display:none;">
             <div id="unity-loading-bar">
                 <!--<div id="unity-logo">
@@ -31,9 +30,9 @@
             const buildUrl = "Build/";
             const loaderUrl = buildUrl + "Webgl.loader.js";
             const config = {
-                dataUrl: buildUrl + "Webgl.data.gz",
+                dataUrl: buildUrl + "Webgl.data",
                 frameworkUrl: buildUrl + "Webgl.framework.js",
-                codeUrl: buildUrl + "Webgl.wasm.gz",
+                codeUrl: buildUrl + "Webgl.wasm",
                 streamingAssetsUrl: "StreamingAssets",
             };
 
