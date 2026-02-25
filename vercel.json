@@ -1,24 +1,29 @@
 {
   "headers": [
     {
-      "source": "/(.*).wasm.gz",
+      "source": "/Build/Webgl.wasm.gz",
       "headers": [
         { "key": "Content-Type", "value": "application/wasm" },
         { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
     {
-      "source": "/(.*).data.gz",
+      "source": "/Build/Webgl.data.gz",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
         { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
     {
-      "source": "/(.*).js.gz",
+      "source": "/Build/Webgl.framework.js",
       "headers": [
-        { "key": "Content-Type", "value": "application/javascript" },
-        { "key": "Content-Encoding", "value": "gzip" }
+        { "key": "Content-Type", "value": "application/javascript" }
+      ]
+    },
+    {
+      "source": "/Build/Webgl.loader.js",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" }
       ]
     }
   ]
